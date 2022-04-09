@@ -1,0 +1,58 @@
+###########################
+#   RANDOM        EVENTS  #
+#        POLITICAL        #
+###########################
+
+add_namespace = ireland
+
+country_event = {
+	id = ireland.1
+	title = ireland.1.t
+	desc = ireland.1.d
+	picture = GFX_anglo-irish
+	is_triggered_only = yes
+		
+	option = {
+		name = ireland.1
+		add_stability = 0.25
+		ai_chance = { base = 100 }
+		IRE = { set_country_flag = { flag = IRE_Focus value = 1 } }
+	}
+}
+
+country_event = {
+	id = ireland.4
+	title = ireland.4.t
+	desc = ireland.4.d
+	picture = GFX_bombing
+	is_triggered_only = yes
+		
+	option = {
+		name = ireland4.4.a
+		add_stability = -0.10
+		add_war_support = -0.10
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = -250
+            }
+		ai_chance = { base = 100 }
+		IRE = { set_country_flag = { flag = IRE_Focus value = 1 } }
+	    hidden_effect = {
+            news_event = { hours = 12 id = news.7777 }
+        }
+	}
+}
+
+country_event = {
+	id = ireland.5
+	title = ireland.5.t
+	desc = ireland.5.d
+	picture = 
+	is_triggered_only = yes
+		
+	option = {
+		name = ireland5.5.a
+		ai_chance = { base = 100 }
+		IRE = { set_country_flag = { flag = IRE_Focus value = 1 } }
+	}
+}

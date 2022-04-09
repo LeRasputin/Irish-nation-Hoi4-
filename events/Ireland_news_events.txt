@@ -1,0 +1,34 @@
+###########################
+#   RANDOM        EVENTS  #
+#        POLITICAL        #
+###########################
+
+add_namespace = ireland
+
+news_event = {
+    id = news.7777
+    title = ireland.2.t
+    desc = ireland.2.d
+    picture = GFX_bombing
+
+    is_triggered_only = yes
+
+    option = {
+        name = ireland.2.t
+        }
+    }
+
+news_event = {
+    id = news.7778
+    title = ireland.3.t
+    desc = Ireland.3.d
+    picture = GFX_anglo-irish-2
+
+    is_triggered_only = yes
+
+    option = {
+        name = ireland.3.t
+        }
+    }
+}
+
