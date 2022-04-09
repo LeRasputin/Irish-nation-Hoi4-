@@ -1,0 +1,4292 @@
+focus_tree = {
+	id = Ireland_focus
+	
+    country = {
+	  factor = 0
+	  modifier = {
+		tag = IRE
+		add = 10
+	  }
+	}
+
+
+	
+	#Anglo-Irish Trade War
+
+	focus = {
+		id = IRE_angloirishtradewar
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 6
+		y = 0
+	
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		 add_political_power = 100
+		   country_event = ireland.1
+		
+		}
+		 
+    }
+	
+    #Industry Of Ireland
+	
+	focus = {
+		id = IRE_industry_of_ireland
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_angloirishtradewar }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 50
+            add_tech_bonus = {
+		        name = IRE_industry_of_ireland
+				bonus = 1.0
+				uses = 2
+				category = industry
+		
+		    }
+		 
+        }
+    }
+	
+	#Increase our steel Industry
+		 
+    focus = { 
+		id = IRE_industrial_steel
+		icon = GFX_goal_generic_construction2
+		x = 6
+		y = 3
+	    relative_position_id = IRE_angloirishtradewar
+		prerequisite = { focus = IRE_industry_of_ireland }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_resource = { 
+                    type = steel
+                    amount = 8 
+                    state = 113
+
+		
+            }        
+		}
+    }
+	
+	#Increase our steel Aluminium
+		 
+    focus = {
+		id = IRE_industrial_aluminium
+		icon = GFX_goal_generic_construction2
+		x = 6
+		y = 2
+	    relative_position_id = IRE_angloirishtradewar
+		prerequisite = { focus = IRE_industrial_steel }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_resource = { 
+                    type = aluminium
+                    amount = 8 
+                    state = 113
+
+		
+            }        
+		}
+    }
+	
+	#The Éire Research
+	
+	focus = {
+		id = IRE_the_irish_research
+		icon = GFX_focus_research
+		x = 0
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_tech_bonus = {
+		        name = IRE_research_of_ireland
+				bonus = 1.0
+				uses = 2
+				category = electronics
+		
+		    }
+		}
+	}
+    
+	#Build up the Dublins University 
+	
+	focus = {
+		id = IRE_the_irish_research_v2
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_the_irish_research }
+		relative_position_id = IRE_the_irish_research
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	#Expand Dublin University 
+	
+	focus = {
+		id = IRE_the_irish_research_v3
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_the_irish_research_v2 }
+		relative_position_id = IRE_the_irish_research_v2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	#Civilian Economy of Ireland
+	
+	focus = {
+		id = IRE_civilian_economy_of_ireland
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Dublins Civilian Economy
+	
+	focus = {
+		id = IRE_dublin_civilian_economy_of_ireland
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_civilian_economy_of_ireland }
+		relative_position_id = IRE_civilian_economy_of_ireland
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Expand Dublins Civilian Economy
+	
+	focus = {
+		id = IRE_expand_dublin_civilian_economy_of_ireland
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_dublin_civilian_economy_of_ireland }
+		relative_position_id = IRE_dublin_civilian_economy_of_ireland
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Small Arms Factories Development
+	
+	focus = {
+		id = IRE_small_arms_development
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			135 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Build Up Limericks Small Arms Factories
+	
+	focus = {
+		id = IRE_limericks_small_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_small_arms_development }
+		relative_position_id = IRE_small_arms_development
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			135 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Build Up Limericks Small Arms Factories
+	
+	focus = {
+		id = IRE_expand_limericks_small_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_limericks_small_arms_industry }
+		relative_position_id = IRE_limericks_small_arms_industry
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			135 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Shipyard Building
+	
+	focus = {
+		id = IRE_shipyard_building
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -2
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			134 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Build up Galways Shipyard Building
+	
+	focus = {
+		id = IRE_build_up_galway_shipyard_building
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_shipyard_building }
+		relative_position_id = IRE_shipyard_building
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			134 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Expand Galways Shipyards
+	
+	focus = {
+		id = IRE_expand_galway_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_build_up_galway_shipyard_building }
+		relative_position_id = IRE_build_up_galway_shipyard_building
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			134 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	#Infastructure Project
+	
+	focus = {
+		id = IRE_infastructure_project
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -4
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			134 = {
+                    add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+   
+   #Infastructure Project
+	
+	focus = {
+		id = IRE_infrastructure_project_v2
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_infastructure_project }
+		relative_position_id = IRE_infastructure_project
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			135 = {
+                    add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+    
+	##Final Infastructure Project
+	
+	focus = {
+		id = IRE_infrastructure_project_v3
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_infrastructure_project_v2 }
+		relative_position_id = IRE_infrastructure_project_v2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+                    add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+			
+    }
+  
+   #Synthetics For Ireland
+   
+   focus = { 
+		id = IRE_synthetics_for_ireland
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -6
+		y = 2
+	    prerequisite = { focus = IRE_industry_of_ireland }
+		relative_position_id = IRE_angloirishtradewar
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+		    add_tech_bonus = {
+                name = USA_rubber_reserve_company
+				bonus = 1.0
+				uses = 2
+				technology = rubber_processing
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing    
+                
+				
+            }
+        }
+			
+    }
+   
+   #FUEL FOR IRELAND
+   
+   focus = { 
+		id = IRE_fuel_storage
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_synthetics_for_ireland }
+		relative_position_id = IRE_synthetics_for_ireland
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+		    134 = {
+                    add_building_construction = {
+                    type = fuel_silo
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			
+			135 = {
+                    add_building_construction = {
+                    type = fuel_silo
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            
+			113 = {
+                    add_building_construction = {
+                    type = fuel_silo
+                    level = 1
+                    instant_build = yes
+                }
+            }
+	   }
+   
+   }
+  
+   #Rubber for Ireland
+   
+   focus = { 
+		id = IRE_rubber_for_ireland
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_fuel_storage }
+		relative_position_id = IRE_fuel_storage
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+		    134 = {
+                    add_building_construction = {
+                    type = synthetic_refinery
+                    level = 2
+                    instant_build = yes
+                
+                }
+            }
+       }
+    }
+    
+   #Stay with the Commonwealth section
+	
+   #Stay with the Commonwealth
+   
+   focus = { 
+		id = IRE_stay_with_common_wealth
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		mutually_exclusive = { focus = IRE_leave_the_common_wealth } 
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 100
+                
+                }
+            
+    }
+	
+	#Supply the Empire
+		 
+    focus = { 
+		id = IRE_supply_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 5
+		y = 1
+	    relative_position_id = IRE_stay_with_common_wealth
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 50
+		
+        }
+    }
+	
+	#Increase our Aluminium Industry
+		 
+    focus = { 
+		id = IRE_increase_our_industry_v2
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+	    relative_position_id = IRE_supply_empire
+		prerequisite = { focus = IRE_supply_empire }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 50
+			add_resource = { 
+                    type = aluminium
+                    amount = 2 
+                    state = 113
+           
+		    }
+        }
+    }
+	
+    #Increase our steel Industry
+		 
+    focus = { 
+		id = IRE_increase_our_industry
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1
+		y = 1
+	    relative_position_id = IRE_supply_empire
+		prerequisite = { focus = IRE_supply_empire }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 50
+			add_resource = { 
+                    type = steel
+                    amount = 2 
+                    state = 113
+
+		
+            }        
+		}
+    }
+
+	#Join the commonwealth research
+		 
+    focus = {
+		id = IRE_commonwealth_research
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1
+		y = 1
+		relative_position_id = IRE_stay_with_common_wealth
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 50
+		    add_to_tech_sharing_group = commonwealth_research
+		}
+    }
+
+    #British aircraft licence Production
+	
+	focus = { 
+		id = IRE_RAF_licence 
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 3
+		y = 1
+	    prerequisite = { focus = IRE_stay_with_common_wealth }
+		relative_position_id = IRE_stay_with_common_wealth
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    
+		}
+    }
+	
+	#Debate for the north
+	
+	focus = { 
+		id = IRE_debate_north
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+	    relative_position_id = IRE_stay_with_common_wealth
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    
+		}
+    }
+	
+	#Push for the question
+	
+	focus = { 
+		id = IRE_push_for_question
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1
+		y = 1
+	    relative_position_id = IRE_debate_north
+		prerequisite = { focus = IRE_debate_north}
+		mutually_exclusive = { focus = IRE_forget_the_north }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    
+		}
+    }
+	
+	#Forget the North
+	
+	focus = { 
+		id = IRE_forget_the_north
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -2
+		y = 2
+	    relative_position_id = IRE_stay_with_common_wealth
+		prerequisite = { focus = IRE_debate_north }
+		mutually_exclusive = { focus = IRE_push_for_question }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    
+		}
+    }
+	
+	#Benefits for the south
+	
+	focus = { 
+		id = IRE_benefits_for_south
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 1
+	    relative_position_id = IRE_forget_the_north
+		prerequisite = { focus = IRE_forget_the_north }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+			
+			113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		    
+			113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+		}
+    }
+	
+	#United Ireland is the best Ireland
+	
+	focus = {
+		id = IRE_united_ireland
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 1
+	    relative_position_id = IRE_push_for_question
+		prerequisite = { focus = IRE_push_for_question }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_state_core= 119  
+			add_political_power = 10  
+			add_stability= 0.1
+		}
+    }
+	
+	#Question our path	
+		focus = {
+		id = IRE_question_our_path
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 8
+		y = 1
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Strength our demand 	
+		focus = {
+		id = IRE_strength our demand
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_question_our_path }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 8
+		y = 2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Question 	
+		focus = {
+		id = IRE_leave_the_commonwealth_2
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_strength }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 8
+		y = 3
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Stay for the UNION	
+		focus = {
+		id = IRE_stay_certain_
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 10
+		y = 1
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Question our path	
+		focus = {
+		id = IRE_bring_back_the_lads
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 12
+		y = 1
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#IRA focus remover	
+		focus = {
+		id = IRE_Hidden_Threat
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_stay_with_common_wealth }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 14
+		y = 1
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+    
+	#SienFien	
+		focus = {
+		id = IRE_sien_fien
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_stay_certain_ }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 10
+		y = 2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#PROUNION	
+		focus = {
+		id = IRE_prounion
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_sien_fien }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 10
+		y = 3
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#IRE_united_ireland	
+		focus = {
+		id = IRE_Civilian_Economy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_united_ireland }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 0
+		y = 4
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#IRE_united_ireland	
+		focus = {
+		id = IRE_Military_economy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_united_ireland }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 2
+		y = 4
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Rename Ourselves
+		focus = {
+		id = IRE_rename_ourselves
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_Military_economy }
+		prerequisite = { focus = IRE_Civilian_Economy }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 0
+		y = 5
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#IRE_united_ireland	
+		focus = {
+		id = IRE_reunify_Irish
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_united_ireland }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 4
+		y = 4
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#IRE_united_ireland	
+		focus = {
+		id = IRE_more_development
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_benefits_for_south }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = -2
+		y = 4
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+	
+	#Request the black and tans back
+		focus = {
+		id = IRE_request_the_black_and_tans
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_Hidden_Threat }
+		relative_position_id = IRE_stay_with_common_wealth
+		x = 14
+		y = 2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+                
+          
+        }
+    }
+   
+   ###Leave the commonwealth
+   
+   #Leave the Commonwealth
+   
+   focus = {
+		id = IRE_leave_the_common_wealth
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 17
+		y = 0
+		relative_position_id = IRE_stay_with_common_wealth
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+            remove_ideas = CMW
+            add_stability = 0.10
+			add_war_support = 0.10
+			OVERLORD = {
+				set_autonomy = {
+					target = IRE
+					autonomy_state = autonomy_free
+				}
+			}
+		}   
+    }
+   
+    #Douglas
+	
+    focus = {
+		id = IRE_First_president_for_ireland
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 2
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_leave_the_common_wealth }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		custom_effect_tooltip = IRE_President
+		
+		}
+		
+		completion_reward = {
+		    retire_country_leader
+			add_political_power = 25
+            set_party_name = { ideology = Democratic long_name = Democratic name = Democratic }
+		}   }
+    
+	
+	
+	#Revival of the Democratic 
+	
+    focus = {
+		id = IRE_Democratic
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 3
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_First_president_for_ireland }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Emergency Powers act 
+	
+    focus = {
+		id = IRE_emergency_powers
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 2
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+          hidden_effect = {
+            country_event = ireland.4
+        }
+      }
+	}
+	
+	#Powers
+	
+    focus = {
+		id = IRE_give_powers
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 2
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_emergency_powers }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Find the Terrorists 
+	
+    focus = {
+		id = IRE_find_terrorists
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 4
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_emergency_powers }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#The State Of Ireland
+	
+    focus = {
+		id = IRE_state
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Rename Ireland
+	
+    focus = {
+		id = IRE_Rename_ireland
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_state }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Negoit
+	
+    focus = {
+		id = IRE_port
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 4
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Negoit
+	
+    focus = {
+		id = IRE_president
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 6
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+    #Negoit
+	
+    focus = {
+		id = IRE_IRA
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 8
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Civilian
+	
+    focus = {
+		id = IRE_civilian
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -2
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+            113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+	
+	#Civilian
+	
+    focus = {
+		id = IRE_civilian_neutral
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -2
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_civilian }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+            113 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+	
+	#Civilian Development
+	
+    focus = {
+		id = IRE_supply_ireland
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -4
+		y = 4
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Democratic }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Civilian resources
+	
+    focus = {
+		id = IRE_civilian_resources
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -4
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_supply_ireland }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Supply Ireland
+	
+    focus = {
+		id = IRE_civilian_Ireland
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -6
+		y = 5
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_supply_ireland }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Neutrality
+	
+    focus = {
+		id = IRE_Neutrality
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 6
+		relative_position_id = IRE_leave_the_common_wealth
+		prerequisite = { focus = IRE_Rename_ireland }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+          
+        }
+    }
+	
+	#Fascist
+	
+	#Armyyyyyyyyyyy
+    
+	#Rearming our nation!
+	
+    focus = {
+		id = IRE_rearming_our_nation
+		icon = GFX_goal_generic_army_doctrines
+		x = 15
+		y = 6
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+            navy_experience = 50
+			army_experience = 50
+			air_experience = 50
+        }
+    }
+
+   #Irish Defence
+
+   ##Civilian Fortfication
+	
+	focus = {
+		id = IRE_civilian_fortification
+		icon = GFX_goal_generic_construct_military
+		x = 7
+		y = 1
+	    relative_position_id = IRE_rearming_our_nation
+		prerequisite = { focus = IRE_rearming_our_nation }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			
+        }
+    }
+	
+    #Fortify Dublin
+	
+	focus = {
+		id = IRE_fortify_dublin
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+	    relative_position_id = IRE_civilian_fortification
+		prerequisite = { focus = IRE_civilian_fortification }
+		cost = 10
+		
+		
+		S
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+				add_building_construction = { type = coastal_bunker province = 11293 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11293 level = 2 instant_build = yes }
+				}
+		
+		}
+    }
+
+    #Fortify the border
+	
+	focus = {
+		id = IRE_fortify_the_border
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+	    relative_position_id = IRE_fortify_dublin
+		prerequisite = { focus = IRE_fortify_dublin }
+		
+		cost = 10
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		add_political_power = 5
+		113 = {
+				add_building_construction = { type = bunker province = 3359 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11303 level = 2 instant_build = yes }
+				}
+        134 = {
+				add_building_construction = { type = bunker province = 11238 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11371 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 337 level = 2 instant_build = yes }
+				}
+		
+		}        
+    }
+	
+    ##################Army focuses/doctrines
+	
+	##An tArm
+	
+	focus = {
+		id = IRE_An_tArm
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 1
+	    relative_position_id = IRE_rearming_our_nation
+		prerequisite = { focus = IRE_rearming_our_nation }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			army_experience = 15
+                
+          
+        }
+    }
+    
+	##Keep to the Old Ways
+	
+	focus = {
+		id = IRE_keeping_to_the_old_ways
+		icon = GFX_goal_generic_construct_military
+		x = -2
+		y = 1
+	    relative_position_id = IRE_An_tArm
+		mutually_exclusive = { focus = IRE_remember_the_somme }
+		prerequisite = { focus = IRE_An_tArm }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			army_experience = 15
+            add_idea = IRE_old_ways
+        }
+    }
+
+    #Remember The somme
+		 
+    focus = {
+		id = IRE_remember_the_somme
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 2
+		y = 1
+	    relative_position_id = IRE_An_tArm
+		mutually_exclusive = { focus = IRE_keeping_to_the_old_ways }
+		prerequisite = { focus = IRE_An_tArm }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			army_experience = 15 
+            add_idea = 
+		}
+    }
+
+    ##Bodies do not Matter
+	
+	focus = {
+		id = IRE_bodies_dont_matter
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 1
+	    relative_position_id = IRE_keeping_to_the_old_ways
+		prerequisite = { focus = IRE_keeping_to_the_old_ways }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_ideas = IRE_mass_wave
+			
+          
+        }
+    }
+
+    #Allow Women to Fight
+	
+	focus = {
+		id = IRE_allow_women_fight
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 1
+	    relative_position_id = IRE_remember_the_somme
+		prerequisite = { focus = IRE_remember_the_somme }
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_idea = Irish_allow_women_fight
+			
+          
+        }
+    }
+
+    #Superior firepower
+	
+	focus = {
+		id = IRE_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+	    relative_position_id = IRE_allow_women_fight
+		prerequisite = { focus = IRE_allow_women_fight }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			
+			
+          
+        }
+    }
+    
+    #Support Companies
+	
+	focus = {
+		id = IRE_support_companies
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1
+		y = 1
+	    relative_position_id = IRE_superior_firepower
+		prerequisite = { focus = IRE_superior_firepower }
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+			
+          
+        }
+    }
+
+    #Artillery for Ireland
+	
+	focus = {
+		id = IRE_Artillery_for_Ireland
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+	    relative_position_id = IRE_superior_firepower
+		prerequisite = { focus = IRE_superior_firepower }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+			
+          
+        }
+    }
+
+    #Trench Warfare
+	
+	focus = {
+		id = IRE_Trench_warfare
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 1
+	    relative_position_id = IRE_bodies_dont_matter
+		prerequisite = { focus = IRE_bodies_dont_matter }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+			
+          
+        }
+    }
+
+    #Gun Production
+	
+	focus = {
+		id = IRE_Gun_production
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 1
+		y = 1
+	    relative_position_id = IRE_Trench_warfare
+		prerequisite = { focus = IRE_Trench_warfare }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			hidden_effect = {
+			add_ideas = FRA_infantry_focus
+			}
+          
+        }
+    }
+	
+	 #Tench Building
+	
+	focus = {
+		id = IRE_trench_building
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1
+	    relative_position_id = IRE_Trench_warfare
+		prerequisite = { focus = IRE_Trench_warfare }
+		
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+    
+	    available = {
+		
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+			
+          
+        }
+    }  
+	
+	
+	#Irish Airforce 
+	
+	##Aerfhórsa na hÉireann
+	
+	focus = {
+		id = IRE_airforce
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_rearming_our_nation }
+		relative_position_id = IRE_rearming_our_nation
+		x = 2
+		y = 1
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			air_experience = 50
+                
+          
+        }
+    }
+
+    #Groupsupport
+	
+	focus = {
+		id = IRE_group_support
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_airforce }
+		relative_position_id = IRE_rearming_our_nation
+		x = 5
+		y = 2
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			air_experience = 50
+                
+          
+        }
+    }
+    
+	 #CASProduction
+	 
+	 focus = {
+		id = IRE_cas_production
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = IRE_group_support }
+		relative_position_id = IRE_rearming_our_nation
+		x = 5
+		y = 3
+		
+		cost = 10
+		
+		
+		
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			air_experience = 50
+                
+          
+        }
+    }
+	
+	#defend the sea
+		 
+    focus = {
+		id = IRE_defend_the_sea
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 16
+		y = 8
+	    prerequisite = { focus = IRE_airforce }
+		mutually_exclusive = { focus = IRE_defend_eire }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+          
+        }
+    }
+
+    #Bombers
+		 
+    focus = {
+		id = IRE_bomber_production
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 16
+		y = 9
+	    prerequisite = { focus = IRE_airforce }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+          
+        }
+    }
+	
+	#Expand the Irish Airbases
+		 
+    focus = {
+		id = IRE_Expand_Irish_airbases
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 17
+		y = 10
+	    prerequisite = { focus = IRE_airforce }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+          
+        }
+    }
+	
+	#Protecting  Éire
+		 
+    focus = {
+		id = IRE_defend_eire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 18
+		y = 8
+	    #mutually_exclusive = { focus = IRE_defend_the_sea }
+		prerequisite = { focus = IRE_airforce }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+          
+        }
+    }
+	
+	#Fighters for Ireland
+		 
+    focus = {
+		id = IRE_production_of_fighters
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 18
+		y = 9
+		prerequisite = { focus = IRE_airforce }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+          
+        }
+    }
+	
+	#Production of Fighters
+		 
+    focus = {
+		id = IRE_defend_eire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 18
+		y = 8
+	    #mutually_exclusive = { focus = IRE_ }
+		prerequisite = { focus = IRE_airforce }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+	
+	#Women Pilots
+		 
+    focus = {
+		id = IRE_allow_Women_pilots
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 17
+		y = 11
+	    prerequisite = { focus = IRE_Expand_Irish_airbases }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+	
+	#Add Anti Air Batteries
+		 
+    focus = {
+		id = IRE_Anti_air_batteries
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 19
+		y = 11
+	    prerequisite = { focus = IRE_Expand_Irish_airbases }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+	
+	#The Coast has Ears
+		 
+    focus = {
+		id = IRE_Coast_has_ears
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 21
+		y = 11
+	    prerequisite = { focus = IRE_Expand_Irish_airbases }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+	
+	#Irish Rocket Development
+		 
+    focus = {
+		id = IRE_Irish_Rocket_development
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 23
+		y = 11
+	    prerequisite = { focus = IRE_Expand_Irish_airbases }
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+	
+	focus = {
+		id = IRE_reviving_the_army
+		icon = GFX_focus_SOV_restore_cossack_units
+		x = 9
+		y = 1
+	   prerequisite = { focus = IRE_rearming_our_nation }
+		relative_position_id = IRE_rearming_our_nation
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+			completion_reward = {
+		    add_political_power = 5
+			
+				division_template = {
+					name = "Leinster Guard"
+					priority = 146
+					division_names_group = "Leinster Guard"
+					regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+			    	   		 	infantry = { x = 2 y = 0 }
+							}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				113 = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 146 }
+					create_unit = {
+						division = "name = \"Leinster Guard\" division_template = \"Leinster Guard\" start_experience_factor = 1.0" 
+						owner = IRE
+					}
+					
+				}
+      }
+	  
+    }
+	
+	#Reviving the Guard
+    
+	focus = {
+		id = IRE_reviving_the_guard
+		icon = GFX_focus_SOV_restore_cossack_units
+		x = 0
+		y = 1
+	    prerequisite = { focus = IRE_reviving_the_army }
+		relative_position_id = IRE_reviving_the_army
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			
+				division_template = {
+					name = "Eire Guard"
+					priority = 146
+					division_names_group = "Eire Guard"
+					regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+			    	   		 	infantry = { x = 2 y = 0 }
+							}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				135 = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 146 }
+					create_unit = {
+						division = "name = \"Eire Guard\" division_template = \"Eire Guard\" start_experience_factor = 1.0" 
+						owner = IRE
+					}
+					
+				}
+			
+		}
+                
+    }  
+
+    #Final Guard unit
+		
+		focus = {
+		id = IRE_Final_guard_unit
+		icon = GFX_focus_SOV_restore_cossack_units
+		x = 0
+		y = 2
+	    prerequisite = { focus = IRE_reviving_the_guard }
+		relative_position_id = IRE_reviving_the_army
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			
+				division_template = {
+					name = "Eire Guard"
+					priority = 146
+					division_names_group = "Eire Guard"
+					regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+			    	   		 	infantry = { x = 2 y = 0 }
+							}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				134 = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 146 }
+					create_unit = {
+						division = "name = \"Eire Guard\" division_template = \"Eire Guard\" start_experience_factor = 1.0" 
+						owner = IRE
+					}
+					
+				}
+			
+		}
+                
+    }
+
+    #Irish navy section
+	
+	#Navy
+	
+    focus = {
+		id = IRE_irish_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 12
+		y = 1
+	    prerequisite = { focus = IRE_rearming_our_nation }
+		relative_position_id = IRE_rearming_our_nation
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			navy_experience = 75
+        }
+    }
+
+    #Tigers of the sea
+	
+    focus = {
+		id = IRE_subs
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 1	    
+		prerequisite = { focus = IRE_irish_navy }
+		relative_position_id = IRE_irish_navy
+		mutually_exclusive = { focus = IRE_grand_fleet } 
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+	
+        }
+    }
+
+    #Production of Subs
+	
+    focus = {
+		id = IRE_sub_production
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 2	    
+		prerequisite = { focus = IRE_subs }
+		relative_position_id = IRE_irish_navy
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+
+    #Grand fleet
+	
+    focus = {
+		id = IRE_grand_fleet
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 3
+		y = 1	    
+		prerequisite = { focus = IRE_irish_navy }
+		relative_position_id = IRE_irish_navy
+		mutually_exclusive = { focus = IRE_subs } 
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+
+    #Irish Production for Ships
+	
+    focus = {
+		id = IRE_grand_fleet_production
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 3
+		y = 2	    
+		prerequisite = { focus = IRE_grand_fleet }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			
+        }
+    }
+
+    #Marines
+	
+    focus = {
+		id = IRE_marines
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 2
+		y = 4	    
+		prerequisite = { focus = IRE_irish_navy }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_tech_bonus = {
+				name = uk_amphibious_focus
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+        }
+    }
+
+    #landing craft
+	
+    focus = {
+		id = IRE_landing_craft
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 0
+		y = 4	    
+		prerequisite = { focus = IRE_irish_navy }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_tech_bonus = {
+				name = IRE_amphibious_focus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+        }   }
+    }
+
+    #fortify the coast
+	
+    focus = {
+		id = IRE_fortify_coast
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 5	    
+		prerequisite = { focus = IRE_irish_navy }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			113 = {
+				add_building_construction = { type = coastal_bunker province = 3359 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11293 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 7377 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 285 level = 2 instant_build = yes }
+				}
+            135 = {
+				add_building_construction = { type = coastal_bunker province = 11237 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 7394 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 9405 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 6405 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11334 level = 2 instant_build = yes }
+				}
+		    134 = {
+				add_building_construction = { type = coastal_bunker province = 3396 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 9396 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 9321 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11371 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 337 level = 2 instant_build = yes }
+				}
+		}
+    }
+
+    #Sub production
+	
+    focus = {
+		id = IRE_doctrine_subs
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -1
+		y = 3	    
+		prerequisite = { focus = IRE_sub_production }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			add_doctrine_cost_reduction = {
+				name = ti_bonus
+				name = GER_trade_interdiction
+				cost_reduction = 0.50
+				uses = 1
+				category = trade_interdiction_tree
+			}
+        }
+    }
+
+    #Fleet doctrine
+	
+    focus = {
+		id = IRE_doctrine_ships
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 3
+		y = 3	    
+		prerequisite = { focus = IRE_grand_fleet_production }
+		relative_position_id = IRE_irish_navy
+		
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 25
+			
+        }
+    }
+
+
+    #Remove modifiers from ww1
+
+    #remember the fallen
+	
+    focus = {
+		id = IRE_remember_the_fallen
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 17
+		y = 1	    
+		prerequisite = { focus = IRE_rearming_our_nation }
+		relative_position_id = IRE_rearming_our_nation
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			hidden_effect = {
+			remove_ideas = Irish_Remember_the_war_strong
+            add_ideas = Irish_Remember_the_war_medium }
+		}
+    }
+
+    #Learn from the Past
+	
+    focus = {
+		id = IRE_learn_from_past
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 17
+		y = 2	    
+		prerequisite = { focus = IRE_remember_the_fallen }
+		relative_position_id = IRE_rearming_our_nation
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			hidden_effect = {
+			remove_ideas = Irish_Remember_the_war_medium
+			add_ideas = Irish_Remember_the_war_weak }
+        }
+    }
+
+    #Move on from the past
+	
+    focus = {
+		id = IRE_Move_on_from_past
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 17
+		y = 3	    
+		prerequisite = { focus = IRE_learn_from_past }
+		relative_position_id = IRE_rearming_our_nation
+		
+		cost = 10
+		ai_will_do = {
+			    factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+		
+		}
+		
+		completion_reward = {
+		    add_political_power = 5
+			hidden_effect = {
+			remove_ideas = Irish_Remember_the_war_weak
+			add_ideas = Irish_Remember_the_war_posti }
+        }
+    }
+}

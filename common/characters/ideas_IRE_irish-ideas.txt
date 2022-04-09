@@ -1,0 +1,17 @@
+characters={
+        IRE_douglas={
+            name=IRE_Douglas_Hyde
+            portraits={
+                civilian={
+                    large="gfx/leaders/IRE/Portrait_Ireland_Douglas.dds"
+                }
+            }
+            country_leader={
+                ideology=conservatism
+                traits = { conservative_nationalist_lar }
+                expire="1965.1.1"
+                id=-1
+            }
+        }
+    }
+}

@@ -1,0 +1,329 @@
+ideas = {
+	country = {		
+	
+	    #IRA
+		IRISH_Irish_republican_army_strong = {
+			
+			picture = IRA
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			add_stability= -0.1
+			add_war_support= -0.1
+			max_planning = -0.30
+			planning_speed = -0.30
+			army_morale_factor = -0.30
+			army_core_attack_factor = -0.30
+			army_core_defence_factor = -0.30
+			}
+		}
+	   
+	    IRISH_Irish_republican_army_medium = {
+			
+			picture = IRA
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			add_stability= -0.1
+			add_war_support= -0.1
+			max_planning = -0.15
+			planning_speed = -0.15
+			army_morale_factor = -0.15
+			army_core_attack_factor = -0.15
+			army_core_defence_factor = -0.15
+			}
+		}
+    
+	    IRISH_Irish_republican_army_weak = {
+			
+			picture = IRA
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			add_stability= 0.1
+			add_war_support= 0.1
+			max_planning = -0.02
+			planning_speed = 0.02
+			army_morale_factor = 0.02
+			army_core_attack_factor = -0.1
+			army_core_defence_factor = 0.10
+			}
+		}
+	
+	    #AngloIrish Trade
+		
+		 Anglo_Irish_trade_strong = {
+			
+			picture = Anglo_Irish_trade_strong
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = -0.30
+			research_speed_factor = -0.30
+			local_resources_factor = -0.30
+			production_speed_buildings_factor = -0.30
+			industrial_capacity_factory = -0.30
+			industrial_capacity_dockyard = -0.30
+			monthly_population = -0.01
+			
+			}
+		}
+	
+	    #Remember the war
+		
+		 Irish_Remember_the_war_strong = {
+			
+			picture = Anglo_Irish_trade_strong
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = -0.15
+			conscription_factor = -0.15
+			
+			}
+		}
+	
+	    #Remember the war
+		
+		 Irish_Remember_the_war_medium = {
+			
+			picture = 
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = -0.10
+			conscription_factor = -0.10
+			
+			}
+		}
+	    
+		#Remember the war
+		
+		 Irish_Remember_the_war_weak = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = -0.05
+			conscription_factor = -0.05
+			
+			}
+		}
+	    
+		#Remember the war
+		
+		 Irish_Remember_the_war_posti = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.05
+			conscription_factor = 0.05
+			
+			}
+		}
+	
+	    #Land Doctrine
+		
+		#Mass wave
+		
+		 IRE_mass_wave = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.05
+			
+			}
+		}
+	
+	    #Allow Women To fight
+		
+		 Irish_allow_women_fight = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.20
+			
+			}
+		}
+	
+	    #Old ways
+		
+		 IRE_old_ways = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			army_core_defence_factor = 0.10
+			army_defence_factor = 0.10
+			dig_in_speed = 2
+			}
+		}
+	
+	    #Remember the Somme
+		
+		 IRE_somme = {
+			
+			picture = Army
+			allowed = {
+				original_tag = "IRE"
+			}
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.20
+			army_core_defence_factor = 0.10
+			army_defence_factor = 0.10
+			
+			}
+		}
+	}
+} 
