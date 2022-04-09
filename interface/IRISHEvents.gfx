@@ -1,0 +1,15 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_anglo-irish"
+        texturefile = "gfx/event_pictures/anglo-irish.dds"
+    }
+    spriteType = {
+        name = "GFX_anglo-irish-2"
+        texturefile = "gfx/event_pictures/anglo-irish-2.dds"
+    }
+    spriteType = {
+        name = "GFX_irish"
+        texturefile = "gfx/event_pictures/irish.dds"
+    }
+}

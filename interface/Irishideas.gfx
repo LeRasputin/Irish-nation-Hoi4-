@@ -1,0 +1,17 @@
+spriteTypes = {
+
+    SpriteType = {
+        name = "GFX_idea_IRISH_Irish_republican_army_strong"
+        texturefile = "gfx/interface/ideas/IRA.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_idea_Anglo_Irish_trade_strong"
+        texturefile = "gfx/interface/ideas/COAL.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_idea_Irish_Remember_the_war_strong"
+        texturefile = "gfx/interface/ideas/Army.dds"
+    }
+}
